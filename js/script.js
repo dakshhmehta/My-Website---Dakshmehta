@@ -89,12 +89,21 @@ function toggleTheme() {
 
 // Initial setup
 document.addEventListener('DOMContentLoaded', function() {
+    // Register Service Worker for offline support
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    console.log('SW registered: ', registration);
+                })
+                .catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+        });
+    }
+
     const animateElements = document.querySelectorAll('.animate-on-scroll');
     animateElements.forEach(element => {
-        // Set initial state for custom animations
-        if (!element.getAttribute('data-animation')) {
-            element.style.transform = 'translateY(30px)';
-        }
         observer.observe(element);
     });
 
