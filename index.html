@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daksh Mehta - Laravel & ERPNext Consultant</title>
+    <title>Daksh Mehta - Technology-Driven Entrepreneur & CTO</title>
+    <meta name="description" content="Daksh Mehta - CTO at Romin Interactive, specializing in building practical, scalable software solutions, ERP systems, and business process automation.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -13,15 +17,17 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Daksh Mehta</div>
+            <div class="logo">DM<span>.</span></div>
             <div style="display: flex; align-items: center; gap: 2rem;">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#what-i-do">What I Do</a></li>
+                    <li><a href="#projects">Side Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="theme-toggle" onclick="toggleTheme()">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
                     <i class="fas fa-sun" id="theme-icon"></i>
                 </button>
             </div>
@@ -32,215 +38,247 @@
     <section class="hero" id="about">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text animate__animated animate__fadeInLeft">
+                    <div class="tagline">Tech that understands business</div>
                     <h1>Daksh Mehta</h1>
-                    <div class="subtitle">Professional & Passionate Laravel and ERPNext Consultant</div>
-                    <p>CTO at Romin Interactive, specializing in ERPNext implementation for Bentonite and Jewellers professionals in Kutch. Transforming businesses through innovative ERP solutions and web applications.</p>
-                    <a href="#contact" class="cta-button">Let's Work Together</a>
+                    <div class="subtitle">Technology-Driven Entrepreneur & CTO</div>
+                    <p>Building practical, scalable software solutions for real businesses at <a href="https://romininteractive.com" target="_blank" class="link-highlight">Romin Interactive</a>. I specialize in turning messy, manual operations into structured, automated workflows.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="cta-button">Let's Work Together</a>
+                        <a href="#achievements" class="secondary-button">View My Work</a>
+                    </div>
                 </div>
-                <div class="hero-image">
-                    <img src="https://via.placeholder.com/250x250/333333/00d4aa?text=DM" alt="Daksh Mehta">
+                <div class="hero-image animate__animated animate__zoomIn">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/400x400/1a1a1a/3b82f6?text=DM" alt="Daksh Mehta">
+                        <div class="experience-badge">
+                            <span class="number">CTO</span>
+                            <span class="text">Romin Interactive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section (New) -->
+    <section class="approach">
+        <div class="container">
+            <div class="approach-grid">
+                <div class="approach-card animate-on-scroll" data-animation="animate__fadeInUp">
+                    <span class="number">01</span>
+                    <h3>Business First</h3>
+                    <p>Thinking like a business owner, not just a developer. I build systems that scale without complexity.</p>
+                </div>
+                <div class="approach-card animate-on-scroll" data-animation="animate__fadeInUp" data-delay="0.2s">
+                    <span class="number">02</span>
+                    <h3>Real Solutions</h3>
+                    <p>Don’t build software for the sake of code — build systems that solve real-world problems.</p>
+                </div>
+                <div class="approach-card animate-on-scroll" data-animation="animate__fadeInUp" data-delay="0.4s">
+                    <span class="number">03</span>
+                    <h3>Simplicity</h3>
+                    <p>Making technology simple enough for non-technical teams to master and use effectively.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInUp">Skills & Expertise</h2>
             <div class="skills-grid">
-                <div class="skill-card animate-on-scroll" data-animation="animate__fadeInLeft">
-                    <i class="fas fa-cogs"></i>
-                    <h3>ERPNext Implementation</h3>
-                    <p>Expert in implementing ERPNext solutions for various industries, with special focus on Bentonite and Jewellery businesses in Kutch region.</p>
+                <!-- Core Expertise -->
+                <div class="skills-category animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <h3><i class="fas fa-brain"></i> Core Expertise</h3>
+                    <ul class="skill-list">
+                        <li>ERPNext & Frappe Framework</li>
+                        <li>Laravel Backend Architect</li>
+                        <li>System Architecture Design</li>
+                        <li>Business Process Automation</li>
+                    </ul>
                 </div>
-                <div class="skill-card animate-on-scroll" data-animation="animate__fadeInRight">
-                    <i class="fab fa-laravel"></i>
-                    <h3>Laravel Development</h3>
-                    <p>Full-stack Laravel development for robust web applications, API development, and custom business solutions.</p>
+                <!-- Technical Skills -->
+                <div class="skills-category animate-on-scroll" data-animation="animate__fadeInUp">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>PHP & Python Development</li>
+                        <li>MySQL & Database Design</li>
+                        <li>REST APIs & Integrations</li>
+                        <li>PWA & Modern Web Apps</li>
+                    </ul>
                 </div>
-                <div class="skill-card animate-on-scroll" data-animation="animate__fadeInLeft">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Developer Coaching</h3>
-                    <p>Mentoring and coaching developers in best practices, code quality, and professional growth in web development.</p>
-                </div>
-                <div class="skill-card animate-on-scroll" data-animation="animate__fadeInRight">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Business Consulting</h3>
-                    <p>Strategic consulting for businesses looking to implement ERP solutions and optimize their operational workflows.</p>
+                <!-- Business Skills -->
+                <div class="skills-category animate-on-scroll" data-animation="animate__fadeInRight">
+                    <h3><i class="fas fa-chart-line"></i> Business & Product</h3>
+                    <ul class="skill-list">
+                        <li>Inventory & Manufacturing Design</li>
+                        <li>Process Optimization</li>
+                        <li>SaaS Product Thinking</li>
+                        <li>Technical Team Leadership</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInUp">Past Projects</h2>
             
-            <div class="project-item animate-on-scroll" data-animation="animate__fadeInUp">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/300x200/1a1a1a/3b82f6?text=Bentonite+ERP" alt="Bentonite Industry ERP" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                </div>
-                <div class="project-content">
-                    <h3>Kutch Bentonite Industries</h3>
-                    <div class="project-detail">
-                        <strong>Use Case - Problem Solved:</strong>
-                        <p>Manual inventory tracking and production planning causing delays and stock discrepancies in bentonite manufacturing operations.</p>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Solution Implemented:</strong>
-                        <p>Complete ERPNext implementation with custom modules for bentonite quality grading, automated inventory management, and production scheduling.</p>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Client Testimonial:</strong>
-                        <div class="testimonial-card">
-                            <p>"Daksh's expertise in ERPNext implementation transformed our bentonite business operations. The system he designed perfectly fits our industry needs."</p>
-                            <div class="testimonial-author">- Rajesh Patel, Kutch Bentonite Industries</div>
-                        </div>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Skills Used:</strong>
-                        <div class="project-tags">
-                            <span class="tag">ERPNext</span>
-                            <span class="tag">Manufacturing</span>
-                            <span class="tag">Inventory Management</span>
-                            <span class="tag">Custom Modules</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item animate-on-scroll" data-animation="animate__fadeInUp">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/300x200/1a1a1a/ec4899?text=Jewellery+ERP" alt="Jewellery Management System" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                </div>
-                <div class="project-content">
-                    <h3>Golden Ornaments Pvt Ltd</h3>
-                    <div class="project-detail">
-                        <strong>Use Case - Problem Solved:</strong>
-                        <p>Complex gold tracking, customer order management, and billing challenges in traditional jewellery business operations.</p>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Solution Implemented:</strong>
-                        <p>Custom ERPNext solution with specialized modules for gold purity tracking, customer management, order processing, and automated billing system.</p>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Client Testimonial:</strong>
-                        <div class="testimonial-card">
-                            <p>"Working with Daksh was a game-changer for our jewellery business. His understanding of our requirements and technical execution was exceptional."</p>
-                            <div class="testimonial-author">- Priya Shah, Golden Ornaments</div>
-                        </div>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Skills Used:</strong>
-                        <div class="project-tags">
-                            <span class="tag">ERPNext</span>
-                            <span class="tag">Retail Management</span>
-                            <span class="tag">Custom Development</span>
-                            <span class="tag">Billing System</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item animate-on-scroll" data-animation="animate__fadeInUp">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/300x200/1a1a1a/3b82f6?text=Laravel+Platform" alt="Laravel E-commerce Platform" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                </div>
-                <div class="project-content">
-                    <h3>Multi-Vendor E-commerce Platform</h3>
-                    <div class="project-detail">
-                        <strong>Use Case - Problem Solved:</strong>
-                        <p>Need for scalable multi-vendor marketplace with advanced inventory management and vendor commission tracking.</p>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Solution Implemented:</strong>
-                        <p>Full-stack Laravel application with multi-vendor support, real-time inventory sync, payment gateway integration, and comprehensive admin dashboard.</p>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Client Testimonial:</strong>
-                        <div class="testimonial-card">
-                            <p>"As a developer, Daksh's coaching helped me level up my Laravel skills significantly. His mentorship approach is practical and results-oriented."</p>
-                            <div class="testimonial-author">- Amit Kumar, Junior Developer</div>
-                        </div>
-                    </div>
-                    <div class="project-detail">
-                        <strong>Skills Used:</strong>
-                        <div class="project-tags">
-                            <span class="tag">Laravel</span>
-                            <span class="tag">Multi-vendor</span>
-                            <span class="tag">Payment Gateway</span>
-                            <span class="tag">API Development</span>
-                        </div>
-                    </div>
+            <div class="trading-edge animate-on-scroll" data-animation="animate__fadeInUp">
+                <div class="edge-content">
+                    <h3><i class="fas fa-chart-pie"></i> My Unique Edge: Trading & Strategy</h3>
+                    <p>I apply analytical business thinking to markets using ETF-based disciplined trading systems and risk-managed strategies like SHOPKEEPER100.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog & Contact Section -->
-    <section id="blog">
+    <!-- Achievements Section (New) -->
+    <section id="achievements" class="achievements-section">
         <div class="container">
-            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInUp">Blog & Contact</h2>
-            <div class="blog-contact-grid">
-                <!-- Contact Section -->
-                <div class="contact-section animate-on-scroll" data-animation="animate__fadeInLeft" id="contact">
-                    <h3>Get In Touch</h3>
+            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInUp">Key Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <p>Built and customized ERP systems for real-world manufacturing workflows.</p>
+                </div>
+                <div class="achievement-item animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                    <p>Designed end-to-end inventory tracking systems (batch-wise, process-wise).</p>
+                </div>
+                <div class="achievement-item animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="icon-box"><i class="fas fa-users-cog"></i></div>
+                    <p>Led and trained teams of developers to deliver structured, scalable code.</p>
+                </div>
+                <div class="achievement-item animate-on-scroll" data-animation="animate__fadeInUp">
+                    <div class="icon-box"><i class="fas fa-boxes"></i></div>
+                    <p>Architected systems handling multi-stage production and warehouse tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do Section (New) -->
+    <section id="what-i-do" class="what-i-do">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInUp">What I Do</h2>
+            <div class="service-grid">
+                <div class="service-card animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <div class="service-header">
+                        <i class="fas fa-industry"></i>
+                        <h3>For Businesses</h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Implement ERP systems (ERPNext / Frappe)</li>
+                        <li>Automate inventory & production workflows</li>
+                        <li>Replace Excel with structured systems</li>
+                        <li>Build tailored internal tools</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll" data-animation="animate__fadeInRight">
+                    <div class="service-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>For Startups & Products</h3>
+                    </div>
+                    <ul class="service-list">
+                        <li>Backend architecture using Laravel</li>
+                        <li>MVP design & development</li>
+                        <li>Scalable API systems</li>
+                        <li>Product strategy consultation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quote-box animate-on-scroll" data-animation="animate__fadeInUp">
+                <p>I don’t just ask: <span>“What software do you need?”</span></p>
+                <p>I ask: <span>“How does your business actually work?”</span></p>
+                <div class="quote-footer">Then I build systems that fit your business, not the other way around.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Projects Section (Hobbies) -->
+    <section id="projects" class="side-projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-animation="animate__fadeInUp">Side Projects & Hobbies</h2>
+            <div class="projects-masonry">
+                <!-- Project 1 -->
+                <div class="project-box animate-on-scroll" data-animation="animate__zoomIn">
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Stock Market Systems</h4>
+                    </div>
+                    <p>Designing structured trading strategies like SHOPKEEPER-style investing, combining discipline and risk management.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-box animate-on-scroll" data-animation="animate__zoomIn" data-delay="0.2s">
+                    <div class="project-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h4>Gamification Projects</h4>
+                    </div>
+                    <p>Contest-based apps and engagement-driven platforms using points and reward systems.</p>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-box animate-on-scroll" data-animation="animate__zoomIn" data-delay="0.4s">
+                    <div class="project-header">
+                        <i class="fas fa-tools"></i>
+                        <h4>Product Experiments</h4>
+                    </div>
+                    <p>Queue management for restaurants and offline-first data entry systems for operational efficiency.</p>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-box animate-on-scroll" data-animation="animate__zoomIn" data-delay="0.6s">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Teaching & Mentoring</h4>
+                    </div>
+                    <p>Training junior developers and creating structured learning paths for Laravel and backend systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll" data-animation="animate__fadeInLeft">
+                    <h2 class="section-title" style="text-align: left;">Let's Connect</h2>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <div class="contact-links">
+                        <a href="mailto:daksh@romininteractive.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>daksh@romininteractive.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/dakshhmehta" target="_blank" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/dakshhmehta</span>
+                        </a>
+                        <a href="https://github.com/dakshhmehta" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/dakshhmehta</span>
+                        </a>
+                        <a href="https://instagram.com/dakshhmehta" target="_blank" class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>instagram.com/dakshhmehta</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll" data-animation="animate__fadeInRight">
                     <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="text" id="company" placeholder="Company">
                         </div>
                         <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
+                            <textarea id="message" rows="5" placeholder="Message" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
-
-                <!-- Blog Section -->
-                <div class="blog-section animate-on-scroll" data-animation="animate__fadeInRight">
-                    <h3>Latest Blog Posts</h3>
-                    <div class="blog-card">
-                        <div class="blog-content">
-                            <div class="blog-date">December 15, 2024</div>
-                            <h4>ERPNext Best Practices for Manufacturing</h4>
-                            <p>Essential tips and strategies for implementing ERPNext in manufacturing businesses, with real-world examples from Kutch industries.</p>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-content">
-                            <div class="blog-date">December 10, 2024</div>
-                            <h4>Laravel Performance Optimization</h4>
-                            <p>Advanced techniques to optimize Laravel applications for better performance and scalability in enterprise environments.</p>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog-content">
-                            <div class="blog-date">December 5, 2024</div>
-                            <h4>Choosing the Right ERP for Your Business</h4>
-                            <p>A comprehensive guide to selecting and implementing the right ERP solution based on your business size and industry requirements.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="social-links">
-                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </section>
@@ -248,7 +286,15 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Daksh Mehta. All rights reserved. | Professional Laravel & ERPNext Consultant</p>
+            <div class="footer-content">
+                <div class="footer-logo">DM<span>.</span></div>
+                <p>&copy; 2024 Daksh Mehta. Building systems that businesses actually use.</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/dakshhmehta" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/dakshhmehta" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/dakshhmehta" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
